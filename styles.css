@@ -1,10 +1,55 @@
+
 body {
-    background:rgb(236, 200, 206);
-    font-family:Arial, Helvetica, sans-serif;
+    background:gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:20px;
 }
+
+.assignment
+{
+    display:flex;
+    padding: 10px;
+    font-size: medium;
+    font-weight:normal;
+    color:black;
+    text-align:left;
+    background:lightgray;
+    margin: 10px;
+}
+
+.assignment img{
+    width:550px;
+}
+
+.explanations{
+font-size:medium;
+padding:15px;
+font-weight:lighter;
+}
+
+
+.assignment details{
+    display:flex;
+    font-size:medium;
+    padding:20px;
+}
+
 h1 {
-    font-size:large;
-    font-weight:bold;
-    color: darkred;
+    font-size:xx-large;
+    font-weight:bolder;
+    color: black;
     text-align:center;
+    padding:15px;
+}
+
+h2{
+    font-size:large;
+}
+
+h3{
+    font-size:large;
+}
+
+h4{
+    font-size:large;
 }
