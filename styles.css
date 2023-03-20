@@ -8,9 +8,9 @@ body {
 .assignment
 {
     display:flex;
-    padding: 10px;
-    font-size: medium;
-    font-weight:normal;
+    padding:10px;
+    font-size: small;
+    font-weight:lighter;
     color:black;
     text-align:left;
     background:lightgray;
@@ -18,20 +18,21 @@ body {
 }
 
 .assignment img{
-    width:550px;
+    width:400px;
 }
 
 .explanations{
-font-size:medium;
-padding:15px;
+display:flex;
+font-size:small;
+padding:20px;
 font-weight:lighter;
 }
 
 
 .assignment details{
-    display:flex;
+    display:flexbox;
     font-size:medium;
-    padding:20px;
+    padding:30px;
 }
 
 h1 {
@@ -43,13 +44,22 @@ h1 {
 }
 
 h2{
-    font-size:large;
+    display:flex;
+    font-size:medium;
 }
 
 h3{
-    font-size:large;
+    display:flex;
+    font-size:medium;
 }
 
 h4{
-    font-size:large;
+    display:flex;
+    font-size:medium;
+}
+
+h5
+{
+    display:flex;
+    font-size:medium;
 }
