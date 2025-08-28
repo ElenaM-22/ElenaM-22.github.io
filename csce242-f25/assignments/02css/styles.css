@@ -1,0 +1,55 @@
+/*P. Elena Maddox, CSCE 242*/
+
+/*Structure*/
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:url(images/background.jpg);
+    background-size:cover;
+}
+
+
+#content{
+    /*technical*/
+    margin:auto;
+    width:65%;
+    padding:2%;
+    border-radius:10px;
+    /*styling*/
+    background:#EEEFD1;
+}
+
+/*Tables*/
+table{
+    border-collapse:collapse;
+}
+
+td,th{
+    border:2px solid#87A702;
+    padding:5px 10px;
+}
+
+th{
+    background:#93A603;
+    color:#182102;
+}
+
+/*Images*/
+#reg-salad, #fruit-salad{
+    width:300px;
+    height:300px;
+    box-shadow:5px 5px #CE1211;
+}
+
+/*Typography*/
+h1{
+    color:#593E2A;
+}
+
+h2{
+    color:#2F6100;
+}
+
+p{
+    color:#7F4D58;
+}

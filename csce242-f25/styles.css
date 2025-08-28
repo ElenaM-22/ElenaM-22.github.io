@@ -1,0 +1,36 @@
+/*P. Elena Maddox, CSCE 242*/
+
+/*Structures*/
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#d19784;
+    background-size:cover;
+}
+
+#content{
+    background:#ede5cd;
+    width:75%;
+    margin:auto;
+    padding:2%;
+    border-radius:10px;
+}
+
+/*Typography*/
+
+h1{
+    color:#7f5b30;
+}
+
+h2{
+    color:#739590;
+}
+
+p{
+    color:#4d2725;
+}
+
+a{
+    color:#ed978c;
+    text-decoration:none;
+}

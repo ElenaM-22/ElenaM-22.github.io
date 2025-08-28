@@ -1,0 +1,46 @@
+/* Structure */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:url("images/background.jpg");
+    background-size:cover;
+}
+
+#content {   /* used to be div, we change to #content so that each block can be unique */
+    background:#F9D394;
+    width:70%;
+    margin:auto;    /* how to center the type */
+    padding:1%;   /* get text away from edge- can also do, say, 10 px, but generally avoid hard coding px*/
+    border-radius:10px;
+}
+
+/* Tables */
+table{
+    border-collapse: collapse;
+}
+td, th {
+    border:1px solid #F29979;
+    padding:5px 10px;       /* top and bottom 5, left and right 10 */
+}
+
+th {
+    background: #FEFFC2;
+    color: black;
+}
+
+/* Images */
+#cat-pic {
+    box-shadow: 5px 5px tan;
+}
+
+/* Typography */
+h1 {
+    color:aqua;     /*since this is "cascading" style sheets, this is overriden by the h1 code lower down */
+}
+
+h2 {
+    color:#8F5540;
+}
+
+h1 {
+    color:#593C31;
+}
