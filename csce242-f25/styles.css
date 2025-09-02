@@ -59,7 +59,9 @@ a:hover{
     color:white;
 }
 
-
+img{
+    max-width:100%;
+}
 /*main navigation*/
 
 #main-nav{
