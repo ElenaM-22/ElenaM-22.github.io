@@ -1,5 +1,10 @@
+:root{
+    --primary-color:#AED70F;
+    --secondary-color:#488C03;
+}
+
 body{
-    background: #AED70F;
+    background:var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,10 +17,11 @@ body{
 }
 
 #main-header {
-    background:#488C03;
-    color:whitek;
+    background:var(--secondary-color);
+    color:white;
     border-radius:5px;
     padding:5px;
+    position:relative;
 }
 
 #main-content section, #main-content aside{
@@ -31,6 +37,28 @@ body{
 
 .squirrel .columns div {
     width:30%;
+}
+
+
+/* showcase */       /* make the PARENT relative and the paragraph absolute */
+#showcase{
+    position:relative;
+}
+#showcase p{
+    background:rgba(0,0,0,0.7);
+    color:white;
+    padding: 10px;
+    width:fit-content;
+    
+    /*
+    position:relative;  positions relative to where it should be vs the complete window 
+    top:-15px;
+    left:10px;
+    */
+    
+    position:absolute; /* concrete: it it will position itself relative to its parent */
+    bottom:20%;
+    left:3%;
 }
 
 /* gallery */
@@ -54,13 +82,15 @@ img{
 }
 
 /*Main navigation*/
-#main-nav ul{
+nav ul{
     list-style-type:none;   /*remove bulllets*/
     padding-left:0;
 }
 
+nav a{
+    text-decoration: none;
+}
 #main-nav li{
-
     border-bottom:1px solid white;
 }
 
@@ -72,12 +102,23 @@ img{
     color:white;
     padding:10px 5px;
     display:block;
-    text-decoration:none;
 }
 
 #main-nav a:hover{
     background:white;
     color:#265902;
+}
+
+#login-nav{
+    position:absolute;
+    top:2.5%;
+    right:2.5%;
+}
+
+#login-nav a{
+    color:white;
+    padding:5px;
+    display:block;
 }
 
 
@@ -129,7 +170,7 @@ h1{
     .five{
         flex:5;
     }
-    /*main-nav*/
+    /* navigation */
     #main-nav li{
         flex:1;
     }
@@ -151,6 +192,13 @@ h1{
 
     .hide-small{
         display:block;
+    }
+
+    #login-nav a{
+        display:inline;
+    }
+    #login-nav li:not(:last-child)::after{
+        content:"|";
     }
 }
 
