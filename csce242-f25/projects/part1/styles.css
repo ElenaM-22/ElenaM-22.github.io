@@ -19,13 +19,10 @@ body{
 .flex-item{
     flex-direction:column;
     display:flex;
+    width:50%;
     background: #d19784;
     padding:5px;
     border-radius:5px;
-    max-height:50%;
-    max-width:50%;
-    margin-left:auto;
-    margin-right:auto;
 }
 
 
@@ -69,10 +66,10 @@ img{
 
 /*main navigation*/
 
-#main-nav, #project-nav{
+#main-nav{
     margin:center;
 }
-#main-nav ol, #project-nav ol{       /*do formatting for flexboxes*/
+#main-nav ol{       /*do formatting for flexboxes*/
     padding-left:0;
     display:flex;
     flex-direction:column;
@@ -82,13 +79,13 @@ img{
     list-style-type:none;  
 }
 
-#main-nav li,#project-nav li{       /*how each individual flexbox is handled*/
+#main-nav li{       /*how each individual flexbox is handled*/
     width:60%;
     display:flex;
     margin:auto;
 }
 
-#main-nav a, #project-nav a{
+#main-nav a{
     color:#4d2725;
 }
 
@@ -114,7 +111,7 @@ img{
         width:90%;
     }
 
-    #main-nav ol, #project-nav ol{
+    #main-nav ol{
         flex-direction:row;
     }
     .assignment-columns{
@@ -122,7 +119,7 @@ img{
         flex:1;
     }
 
-    #main-nav li, #project-nav li{
+    #main-nav li{
         padding:auto;
     }
 
