@@ -1,0 +1,309 @@
+/*P. Elena Maddox, CSCE 242*/
+
+:root{
+    --primary-color:#75000A;
+}
+
+/*structures*/
+body{
+    background:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+
+
+
+#main-header{
+    background:black;
+    background-size:cover;
+    position:relative;
+}
+
+#main-header h1{
+    display:block;
+    position:absolute;
+    bottom:5%;
+    right:2%;
+}
+
+#main-content{
+    margin:auto;
+}
+
+#main-content p{
+    margin-left:200px;
+    margin-right:200px;
+    font-size:20px;
+}
+
+.columns{
+    display:block;
+}
+
+#main-header .flex-item{
+    display:block;
+    padding:20px;
+}
+
+#main-header .columns{
+    margin-right:auto;
+}
+
+#main-header #header-nav .images, .columns{
+    display:inline;
+}
+
+
+/*wide screen*/
+#wide-screen{
+    background:var(--primary-color);
+    display:flex;
+}
+
+#wide-screen .columns{
+    display:block;
+    width:50%;
+    margin-left:5px;
+}
+
+#wide-screen p{
+    color:white;
+    margin-left:5px;
+}
+
+#wide-screen a{
+    background:black;
+    color:white;
+}
+
+#wide-screen a:hover{
+    background-color:white;
+    color:var(--primary-color);
+}
+
+#wide-screen .blue{
+    background:#1F404D;
+}
+
+#wide-screen .blue a{
+    background:var(--primary-color);
+    padding:5px;
+}
+
+
+#dummydummy{
+    padding: 10px;
+    border-radius:200px;
+    margin:auto;
+}
+
+/*typography*/
+
+h1,h2,h3,h4{
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#wide-screen .columns h1{
+    color:white;
+    text-align:left;
+}
+
+
+h2{
+    font-size:175%;
+    color:white;
+}
+
+h4{
+    font-size:65%;
+}
+
+#main-content h1{
+    text-align:center;
+    color:var(--primary-color);
+    font-size:50px;
+}
+
+#header-nav a{
+    color:white;
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+#showcase p{
+    display:none;
+}
+
+.hide{
+    display:none;
+}
+
+.hide-small{
+    display:none;
+}
+
+p{
+    color:black;
+}
+
+/*navigations*/
+
+nav ul{
+    list-style-type:none;
+    padding-left:0;
+}
+
+nav a{
+    color:white;
+    padding:10px 5px;
+    display:block;
+}
+
+nav a:hover{
+    background-color:var(--primary-color);
+    color:white;
+}
+
+#program-nav .columns{
+    margin:center;
+}
+#program-nav ol{
+    padding: 50px;
+    list-style-type:none;
+    gap:50px;
+    margin-left:25%;
+    margin-right:auto;
+}
+
+#program-nav li{
+    background-color:var(--primary-color);
+    margin-bottom:10px;
+    color:white;
+    padding:10px;
+    box-shadow:2px 2px 2px 2px grey;
+}
+
+#program-nav a:hover{
+    background-color:white;
+    color:var(--primary-color);
+}
+
+/*images*/
+img{
+    max-width:100%;
+}
+/*widescreen devices*/
+@media only screen and (min-width:500px){
+    .columns{
+        display:flex;
+    }
+
+    .one{
+        flex:1;
+    }
+
+    .two{
+        flex:2;
+    }
+
+    .three{
+        flex:3;
+    }
+
+    .four{
+        flex:4;
+    }
+
+    .five{
+        flex:5;
+    }
+
+    .hide{
+        display:block;
+    }
+    /*navigation*/
+
+    #header-nav li, #header-nav li:first-child{
+        border:none;
+    }
+
+    #header-nav a{
+        padding:5px;
+        text-align:center;
+    }
+
+    #header-nav a{
+        display:inline;
+    }
+
+    #header-nav ul li:not(:last-child)::after{
+        content:"|";
+        color:white;
+    }
+
+    #showcase .hide{
+        display:block;
+    }
+
+    /*showcase*/
+    #showcase{
+        position:relative;
+    }
+
+    #showcase p{
+        background:rgba(0,0,0,0.1);
+        color:var(--primary-color);
+        padding: 10px;
+        width:fit-content;
+        font-family:'Times New Roman', Times, serif;
+        position:absolute;
+        bottom:10%;
+        left:0;
+        font-size:35px;
+    }
+
+    #wide-screen .flex-item{
+        flex-direction:column;
+    }
+
+    /*impact*/
+    .impact{
+        position:relative;
+    }
+
+    .flex-box{
+        background:black;
+        max-width:40%;
+        height:250px;
+        display:block;
+        position:absolute;
+        bottom:5%;
+        right:2%;
+        padding:5px;
+    }
+
+    #main-content .impact h1{
+        font-size:40px;
+        color:white;
+    }
+    #main-content .flex-box p{
+        color:white;
+        font-size:16px;
+        margin:auto;
+        padding:10px;
+    }
+
+    #main-content .flex-box a{
+        background:var(--primary-color);
+        color:white;
+        padding:10px;
+    }
+        #main-content .flex-box a:hover{
+        background:white;
+        color:var(--primary-color);
+    }
+}
