@@ -92,7 +92,7 @@ img{
     color:#4d2725;
 }
 
-#main-nav a:hover{      /*get rid of underline for links*/
+#main-nav a:hover, #project-nav a:hover{      /*get rid of underline for links*/
     color:white;
     text-decoration:none;
 }
