@@ -73,10 +73,6 @@ h4{
 }
 
 @media only screen and (min-width:768px){
- /*columns*/
-    .columns{
-        display:flex;
-    }  
 
     #main-content .flex-item{
         display:row;
