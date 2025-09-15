@@ -1,0 +1,169 @@
+/*P. Elena Maddox, CSCE 242*/
+
+/*start of code copied from 04_js styles.css from in-class example*/
+
+/* Structure */
+:root {
+    --main-background-color:#D9D2A3;
+    --primary-color:#88DBBB;
+    --columns-color:#DBD987;
+    --circle-color: black;
+    --donation-percent: 0%;
+}
+
+body {
+    background:var(--main-background-color);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#content {
+    background:white;
+    width:90%;
+    margin:auto;
+    border-radius:5px;
+    box-shadow: 10px 10px #DBC688;
+}
+
+header, footer {
+    background:var(--primary-color);
+    color:white;
+    position:relative;
+    padding:20px 0 10px;
+}
+
+header {
+    padding-bottom:3px;
+}
+
+header {
+   /* position:fixed;
+    width:70%;*/
+}
+
+main {
+    padding:5px;
+}
+
+.happy {
+    color:pink;
+}
+
+.sad {
+    color:purple;
+}
+
+.sub-section a {
+    text-decoration:none;
+    color:var(--primary-color);
+    text-align:center;
+}
+
+.hidden {
+    display:none;
+}
+
+.hide-small {
+    display:none;
+}
+
+
+/* Navigation */
+#main-nav ol{
+    display:row;
+    margin:center;
+    padding:10px;
+}
+
+#main-nav li{
+    list-style-type: none;  /* remove the bullets */
+    text-align: center;
+    border-bottom:1px solid white;
+    flex-direction:column;
+    background:var(--columns-color);
+    font-size:1.5em;
+    padding:10px;
+}
+
+#main-nav a, #sub-nav a {
+    color:white;
+    text-decoration: none;  /* remove the underlines */
+    border-bottom:1px solid transparent;
+}
+
+#main-nav a:hover, #sub-nav a:hover {
+    border-bottom:1px solid white;
+}
+
+#main-nav a:hover {
+    color:var(--primary-color);
+}
+
+/* Typography */
+
+p{
+    color:white;
+}
+header h1 {
+    text-align: center;
+}
+
+header h3 {
+    text-align: center;
+}
+
+footer p {
+    text-align:center;
+}
+
+.clicked{
+    background:magenta;
+    color:white;
+}
+
+#map {
+    width:100%;
+    height:500px;
+}
+
+
+/* Medium screens */
+@media only screen and (min-width: 700px) { 
+    #main-nav ol{
+        display:flex;
+        flex-direction:row;
+        gap:20px;
+    }
+    .columns{
+        display:row;
+        flex:1;
+        padding:10px;
+        justify-content:space-between;
+        text-align: center;
+    }
+
+    #main-nav li {
+        flex:1;
+        border-bottom:0;
+        justify-content:space-between;
+    }
+
+    #main-nav li:not(:last-child) {
+        border-right: 1px solid white;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .hide-small {
+        display:flex;
+    }
+}

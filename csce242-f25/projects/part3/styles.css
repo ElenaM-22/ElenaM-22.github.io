@@ -1,0 +1,106 @@
+/*P. Elena Maddox, CSCE 242*/
+
+/*Structures*/
+:root {
+    --primary-color:#d22631;
+    --secondary-color:#005d33;
+    --third-color:#fff81d;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#content{
+    background:white;
+    margin: 0 auto;
+    padding:2%;
+    border-radius:10px;
+}
+
+#main-header{
+    background-image:url(images/header.png);
+    background-size:cover;
+    position:relative;
+}
+
+/*typography*/
+h3{
+    color:var(--primary-color);
+}
+
+h4{
+    text-align:center;
+}
+
+/*main navigation*/
+#main-nav{
+    margin:auto;
+    text-align:center;
+}
+
+#main-nav ul{
+    list-style-type:none;
+    padding-left:0;
+}
+#main-nav li{
+    flex:1;
+}
+
+#main-nav a{
+    padding:10px 5px;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+}
+
+#main-nav a:hover{
+    background:var(--third-color);
+    color:black;
+    padding:10px 5px;
+    display:block;
+    text-decoration:none;
+}
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  gap: 10px; /* Adds space between the image and text */
+}
+
+@media only screen and (min-width:768px){
+ /*columns*/
+    .columns{
+        display:flex;
+    }  
+
+    #main-content .flex-item{
+        display:row;
+    }
+    #main-content .columns{
+        display:flex;
+        padding:10px;
+        margin:center;
+    }
+
+    #main-content ol{
+        display:column;
+    }
+    
+    .columns{
+        display:flex;
+        flex:1;
+        margin:center;
+    }
+
+    #main-content li, #p{
+        padding:auto;
+        display:column;
+        margin:center;
+    }
+
+}
