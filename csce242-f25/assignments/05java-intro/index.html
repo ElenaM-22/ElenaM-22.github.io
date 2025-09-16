@@ -14,29 +14,24 @@
                 <h1>Assignment 7</h1>
                 <h3>Introduction to Javascript</h3>
             </header>
-            <nav id="main-nav" class="columns">
-                <ol>
-                    <li class="flex-item">
-                        <div id ="sunny" class="columns">
-                            <h4>Sunny Times</h4>
-                            <p class="hidden-text"id="hiddentext"></p>
-                        </div>
-                    </li>
-                    <li class="flex-item">
-                        <div class="columns">
-                            <h4>Select a Color:</h4>
-                            <p id="p-color"></p>
-                        </div>
-                    </li>
-                    <li class="flex-item">
-                        <div class="columns">
-                            <h4>Image Change</h4>
-                            <button id="sunny-button">Become Sunny</button>
-                            <p id="p-image"></p>
-                        </div>
-                    </li>
-                </ol>
-            </nav>
+
+            <div class="container">
+                <div class="column" id="sunny-column">
+                    <h3>Sunny Times</h3>
+                        <p id="sunny-text"></p>
+                    </div>
+
+                <div class="column" id="color-column">
+                    <h3>Select a Color</h3>
+                    <input type="color" id="color-picker">
+                    <p id="color-text">Pick a Color to change me</p>
+                </div>
+
+                <div class="column" id="image-column">
+                    <h3>Image Change</h3>
+                    <img id="weather-image">
+                </div>
+            </div>
             <footer>
                 <p>&copy; ElenaM</p>
             </footer>

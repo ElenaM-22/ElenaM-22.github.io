@@ -1,19 +1,20 @@
-document.getElementById("sunny").onclick = (event) => {
-    document.getElementById('hiddentext').style.display = document.getElementById('hiddentext').style.display === 'none' ? 'block' : 'none';
-    event.currentTarget.classList.add("clicked");   /* cyrrent target is the button that was clicked*/
-};
+document.getElementById("sunny-column").onclick = (event) => {
+  document.getElementById("sunny-text").classList.toggle("visible");
+   event.currentTarget.classList.add("clicked");
+}
 
-document.getElementById("happy-button").onclick = (event) => {
-    document.getElementById("p-welcome").innerHTML = "yay!";
-    event.currentTarget.classList.add("clicked");   /* cyrrent target is the button that was clicked*/
-};
+document.getElementById("color-picker").addEventListener("input",() => {
+    document.getElementById("color-text").style.color = colorPicker.value;
+});
 
-document.getElementById("sad-button").onclick = (event) => {
-    document.getElementById("p-welcome").innerHTML = "nay!";
-    event.currentTarget.classList.add("clicked");   /* cyrrent target is the button that was clicked*/
-};
-
-document.getElementById("clear-button").onclick = (event) => {
-    document.getElementById("p-welcome").innerHTML = "";
-    event.currentTarget.classList.add("clicked");   /* cyrrent target is the button that was clicked*/
-};
+let isSunny = true;
+document.getElementById("weather-image").onclick = (event) => {
+    if(isSunny=true) {
+        document.getElementById("weather-image").src="https://img.freepik.com/premium-vector/sun-pixel-illustrator_685023-2177.jpg";
+        isSunny=true;
+    }
+    else{
+        document.getElementById("weather-image").src="https://static.vecteezy.com/system/resources/thumbnails/004/792/792/small/cloud-on-white-background-free-vector.jpg";
+        isSunny=false;
+    }
+}

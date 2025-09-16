@@ -84,6 +84,7 @@ img{
 
 #main-nav li,#project-nav li{       /*how each individual flexbox is handled*/
     width:60%;
+    height:200%;
     display:flex;
     margin:auto;
 }
@@ -101,8 +102,8 @@ img{
 /*images*/
 
 #assignment-screenshots{
-    width:50%;
-    height:50%;
+    width:30%;
+    height:30%;
     display:flex;
     margin-left:auto;
     margin-right:auto;
