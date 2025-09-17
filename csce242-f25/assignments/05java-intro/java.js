@@ -14,7 +14,7 @@ document.getElementById("color-picker").addEventListener("input",(event) => {
 });
 
 document.getElementById("weather-image").onclick = (event) => {
-    if(document.getElementById("weather-image").src = "sun.jpg"{
+    if(document.getElementById("weather-image").src = "sun.jpg") {
         document.getElementById("weather-image").src = "https://static.vecteezy.com/system/resources/thumbnails/004/792/792/small/cloud-on-white-background-free-vector.jpg";
     }
     else{
