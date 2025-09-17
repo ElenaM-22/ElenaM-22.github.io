@@ -14,24 +14,26 @@
                 <h1>Assignment 7</h1>
                 <h3>Introduction to Javascript</h3>
             </header>
-
-            <div class="container">
-                <div class="column" id="sunny-column">
-                    <h3>Sunny Times</h3>
+            <main id="-main-content">
+                <div class="column">
+                    <div class="sunny-column">
+                        <h3>Sunny Times</h3>
                         <p id="sunny-text"></p>
                     </div>
 
-                <div class="column" id="color-column">
-                    <h3>Select a Color</h3>
-                    <input type="color" id="color-picker">
-                    <p id="color-text">Pick a Color to change me</p>
-                </div>
+                    <div class="color-column">
+                        <h3>Color Picker</h3>
+                        <button id = "color-btn" onclick="colorPick()">Select a Color</button>
+                        <input type="color" id="color-picker" class="hidden">
+                        <p id="color-text" class="hidden">P</p>
+                    </div>
 
-                <div class="column" id="image-column">
-                    <h3>Image Change</h3>
-                    <img id="weather-image">
+                    <div class="image-column">
+                        <h3>Image Change</h3>
+                        <img id="weather-image" src="sun.jpg">
+                    </div>
                 </div>
-            </div>
+            </main>
             <footer>
                 <p>&copy; ElenaM</p>
             </footer>

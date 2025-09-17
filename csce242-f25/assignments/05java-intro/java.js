@@ -1,20 +1,45 @@
 document.getElementById("sunny-column").onclick = (event) => {
-  document.getElementById("sunny-text").classList.toggle("visible");
+  document.getElementById("sunny-text").innerHTML = 
+    <pre>
+        Here comes the sun
+        sun
+            sun
+                sun
+        Here it comes
+        </pre>;
    event.currentTarget.classList.add("clicked");
-}
+};
 
-document.getElementById("color-picker").addEventListener("input",() => {
-    document.getElementById("color-text").style.color = colorPicker.value;
-});
+function colorPick(){
+    const color = document.getElementById("colorPicker");
 
-let isSunny = true;
-document.getElementById("weather-image").onclick = (event) => {
-    if(isSunny=true) {
-        document.getElementById("weather-image").src="https://img.freepik.com/premium-vector/sun-pixel-illustrator_685023-2177.jpg";
-        isSunny=true;
+    if(color.classList.contains("hidden")){
+        color.classList.remove("hidden");
+        document.getElementById("color-picker").remove("hidden");
+        document.getElementById("color-text").textContent = "color" + color.value;
+
     }
     else{
-        document.getElementById("weather-image").src="https://static.vecteezy.com/system/resources/thumbnails/004/792/792/small/cloud-on-white-background-free-vector.jpg";
-        isSunny=false;
+        color.classList.add("Hidden");
+        document.getElementById("color-picker").add("hidden");
     }
-}
+
+};
+
+document.getElementById("color-picker").addEventListener("input",(event) => {
+    const finalColor = event.target.value;
+    document.getElementById("color-picker").textContent = "this is my color " + finalColor;
+    document.getElementById("color-picker").style.color = finalColor
+    
+});
+
+document.getElementById("weather-image").onclick = (event) => {
+    if(document.getElementById("weather-image").source.includes("sun.jpg")){
+        document.getElementById("weather-image").src = "https://static.vecteezy.com/system/resources/thumbnails/004/792/792/small/cloud-on-white-background-free-vector.jpg";
+
+    }
+    else{
+        document.getElementById("weather-image").src = "sun.jpg";
+    }
+};
+    
