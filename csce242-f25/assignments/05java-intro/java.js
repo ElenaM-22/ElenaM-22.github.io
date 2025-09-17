@@ -12,6 +12,7 @@ document.getElementById("sunny-column").onclick = (event) => {
 
 document.getElementById("color-picker").addEventListener("input",(event) => {
     const finalColor = event.target.value;
+    console.log(finalColor);
     const text = document.getElementById("color-text");
     text.innerHTML = "this is my color";
     text.style.display = "block";
