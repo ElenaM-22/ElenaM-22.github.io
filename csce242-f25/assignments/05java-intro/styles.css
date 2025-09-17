@@ -54,6 +54,7 @@ main {
     padding:20px;
     text-align:center;
     flex:2;
+    min-width:200px;
 }
 
 .sunny-column, .color-column, .image-column{
