@@ -1,12 +1,6 @@
 document.getElementById("sunny-column").onclick = (event) => {
   document.getElementById("sunny-text").innerHTML = 
-    <pre>
-        Here comes the sun
-        sun
-            sun
-                sun
-        Here it comes
-        </pre>;
+     Here comes the sun;
    event.currentTarget.classList.add("clicked");
 };
 
