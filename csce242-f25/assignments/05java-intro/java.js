@@ -1,7 +1,6 @@
-document.getElementById("sunny-column").onclick = (event) => {
+document.getElementById("sunny-column").onclick = () => {
   document.getElementById("sunny-text").innerHTML = 
      "Here comes the sun Sun sun Sun here it comes";
-   event.currentTarget.classList.add("clicked");
 };
 
 document.getElementById("color-picker").addEventListener("input",(event) => {
