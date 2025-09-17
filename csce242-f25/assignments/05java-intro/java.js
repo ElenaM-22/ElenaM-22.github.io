@@ -10,26 +10,10 @@ document.getElementById("sunny-column").onclick = (event) => {
    event.currentTarget.classList.add("clicked");
 };
 
-function colorPick(){
-    const color = document.getElementById("colorPicker");
-
-    if(color.classList.contains("hidden")){
-        color.classList.remove("hidden");
-        document.getElementById("color-picker").remove("hidden");
-        document.getElementById("color-text").textContent = "color" + color.value;
-
-    }
-    else{
-        color.classList.add("Hidden");
-        document.getElementById("color-picker").add("hidden");
-    }
-
-};
-
 document.getElementById("color-picker").addEventListener("input",(event) => {
     const finalColor = event.target.value;
     document.getElementById("color-picker").textContent = "this is my color " + finalColor;
-    document.getElementById("color-picker").style.color = finalColor
+    document.getElementById("color-picker").style.color = finalColor;
     
 });
 
