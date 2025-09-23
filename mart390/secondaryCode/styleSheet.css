@@ -1,0 +1,102 @@
+/*Global Styles*/
+/*
+:root{
+    --primary-color: ;
+    --secondary-color;
+}
+*/
+/*center class*/
+.center{
+  text-align: center;
+}
+
+/*full page edits*/
+*{
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid black;
+}
+ol li, ul li{
+	margin-left: 25px;
+}
+
+/*text styling*/
+/*heading*/
+h1{
+	font-family: serif;
+}
+/*subheading*/
+h2{
+	background-color: beige;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*paragraph*/
+p{
+	color: red;
+}
+/*unordered*/
+ul li{
+	font-weight: bold;
+	/*change bullet icon*/
+	list-style-image: url('../localFiles/heart.png');
+}
+/*ordered*/
+ol li{
+	background-color: Turquoise;
+}
+
+/*navigations*/
+#main-nav {
+    overflow: hidden;
+}
+
+#main-nav li{
+    list-style-type: none; 
+}
+
+#main-nav a {
+  float: left;
+  display: block;
+  color: grey;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*Footer*/
+footer {
+    margin: 20px 0;
+}
+
+
+/*caption*/
+.caption{
+	border: 2px dashed blue;
+}
+
+  #external-video{
+      width:auto;
+      height:auto;
+  }
+
+/*maddox- responsive size
+/* responsive pages- layout for larger screens */
+@media (min-width: 768px) {
+  
+    .container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #main-nav a {
+    float: none;
+    width: 100%;
+    }
+
+    #external-video{
+      width:892%;
+      height:502%;
+    }
+
+}

@@ -60,12 +60,27 @@
                     <button id="btn-bounce">Start</button>
                     <div id = "ball"></div>
                 </section>
+                <section>
+                    <button id= "btn-count-start">Start</button>
+                    <button id="btn-count-pause">Pause</button>
+                    <p id="p-count"></p>
+                </section>
+                <div>
+                    <h3>Charity Goal $<span id="goal-span"></span></h3>
+                    <p>
+                        <label for="txt-donation">Donations:</label>
+                        <input type = "text" id = "txt-donations">
+                        <span id="donation-error" class="error"></span>
+                    </p>
+                    <p><button id="btn-donations">Add Donation</button></p>
+                    <div id="thermometer"></div>
+                    <p id="donation-message"></p>
+                </div>
             </main>
             <footer>
                 <p>&copy; myname</p>
             </footer>
         </div>
         <script src="js/intro.js"></script> <!--if the script link goes in the head, the javascript will be executed before everything in the HTML loads, so there will be a bunch of undefined stuff instead-->
-        <script></script>
     </body>
 </html>
