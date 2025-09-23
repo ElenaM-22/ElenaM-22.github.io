@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<!-- stylesheet -->
+		<link href="secondaryCode/styleSheet.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<!-- blackburn, starting main structure -->
+		<article>
+			<!--maddox header and internal navigation -->
+			<header>
+				<p>header</p>
+				<nav id="main-nav">
+                    <ul class="columns">
+                        <li><a href="#image">Image</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <li><a href="#external-image">External Image</a></li>
+						<li><a href="#external-video">External Video</a></li>
+                    </ul>
+				</nav>
+			</header>
+
+			<!-- external navigation -->
+			<nav>
+				navigation in header
+			</nav>
+
+			<!-- section and article -->
+			<section>
+				section
+			</section>
+			<article>
+				article
+			</article>
+
+			<!-- open body and footer -->
+			<h1>header one</h1>
+			<h2>header two (subheading)</h2>
+			<p>			
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. 
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa. Taciti sociosqu ad litora torquent per conubia nostra. Ridiculus mus donec rhoncus eros lobortis nulla molestie. 
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mauris pharetra vestibulum fusce dictum risus blandit quis. Finibus facilisis dapibus etiam interdum tortor ligula congue. Justo lectus commodo augue arcu dignissim velit aliquam. Primis vulputate ornare sagittis vehicula praesent dui felis. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Quisque faucibus ex sapien vitae pellentesque sem placerat.
+			</p>
+			<ul>
+				<li>unordered list item 1</li>
+				<li>unordered list item 2</li>
+			</ul>
+			<ol>
+				<li>ordered list item 1</li>
+				<li>ordered list item 2</li>
+			</ol>
+
+			<!-- blackburn, starting images and videos -->
+			
+			<!-- images and videos -->
+			<div class="center">
+				<!-- potentially use id to adjust image width instead? FIX ME -->
+				<!-- local image -->
+				<img  id="image" src="localFiles/image.jpg" alt="local image" loading="lazy" width="75%">
+				<h6>caption</h6>
+				<!-- local video -->
+				<video id="video" alt="local video" width="75%" controls><source src="localFiles/video.mp4" type="video/mp4"></video>
+				<h6>caption</h6>
+				<!-- external image -->
+				<img id="external-image" src="https://dummyimage.com/600x400/000/fff" alt="external image" loading="lazy" width="75%">
+				<h6>caption</h6>
+				<!-- external video -->
+				<iframe id="external-video" width="892" height="502" src="https://www.youtube.com/embed/sGdypso7UFQ" alt="external video"></iframe>
+				<h6>caption</h6>
+			</div>
+
+			<!-- blackburn, ending images and videos -->
+			
+			<footer>
+				footer
+			</footer>
+			
+		</article>
+		<!-- blackburn, ending main structure -->
+    
+	</body>
+</html>

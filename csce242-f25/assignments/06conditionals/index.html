@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Conditionals</title>
+    </head>
+    <body onload="startTime()">
+        <div id="content">
+            <header>
+                <h1>Assignments 6: Conditionals</h1>
+                <h2>If Statements</h2>
+            </header>
+            <main class="columns">
+                <nav class="dropdown">
+                    <button onclick="menuToggle()" class="dropbtn"><span id="arrow down"></span></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <ul>
+                            <li><button id = "ex1-btn" onclick = toggleContent1()>Exercise 1</button></li>
+                            <li><button id = "ex2-btn" onclick = toggleContent2()>Exercise 2</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="exercise1">
+                    <p>How many days has it been since watering your plant?</p>
+                    <div class = "slidecontainer">
+                        <input type="range" min="1" max="12" value="1" class="slider" id="waterRange">
+                        <img id="plant-phase" src="images/phase1.png">
+                        <p id="p-phase-input"></p>
+                        <p id="p-phase-output"></p>
+                    </div>
+                </div>
+                <div id="exercise2">
+                    <h4>Digital Clock</h4>
+                    <p id="clock-txt"></p>
+                </div>
+            </main>
+            <footer>
+                <p id="footer">&copy; ElenaM</p>
+            </footer>
+        </div>
+        <script src="java.js"></script>
+    </body>
+</html>

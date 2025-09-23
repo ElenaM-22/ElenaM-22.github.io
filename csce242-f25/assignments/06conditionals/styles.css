@@ -1,0 +1,168 @@
+/*P. Elena Maddox, CSCE 242*/
+
+/*Structure*/
+:root{
+    --column-background:#F2E4DC;
+    --background:#D9C8BF;
+    --tan: #BFAA8F;
+    --brown:#403332;
+}
+
+main {
+    padding:5px;
+}
+
+body {
+    background:var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    justify-content:center;
+    align-items:center;
+    margin: 0;
+    width:90%;
+    padding-left:35px;
+    padding-bottom: 10px;;
+}
+
+header, footer {
+    background:var(--tan);
+    color:black;
+    position:relative;
+    padding:20px 5px 10px;
+    margin:center;
+}
+
+/*typography*/
+
+p{
+    text-align:center;
+}
+h1,h2, h4, footer #footer{
+    text-align:center;
+}
+
+#clock-txt{
+    text-align:center;
+}
+
+#exercise1, #exercise2{
+    background:var(--tan);
+    padding:3px;
+}
+
+.columns{
+    gap:20px;
+    position:relative;
+}
+
+.arrow-down{
+  position:absolute;
+  top:10px;
+  left:300px;
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 10px solid black;
+}
+
+.hidden {
+    display:none;
+}
+
+/* range slider- style code grabbed from w3schools*/
+.slidecontainer {
+  width: 90%; /* Width of the outside container */
+  margin:auto;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
+/*plant styles*/
+#plant-phase{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding:15px;
+    height:200px;
+    width:200px;
+}
+
+#p-phase-input, #p-phase-output{
+    text-align:center;
+    padding:5px;
+}
+/*
+.hidden {
+    display:none;
+}
+*/
+
+ul{
+    text-align:center;
+}
+li{
+    list-style-type:none;
+}
+
+#ex1-btn, #ex2-btn {
+  background:none;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#ex1-btn:hover, #ex2-btn:hover {
+  color:white;
+}
+
+@media only screen and (min-width:768px) { 
+
+    #content{
+        padding-left:80px;
+    }
+    
+    li{
+        display:inline;
+    }
+    li:not(:last-child)::after {
+        content:"|";
+    }
+}
