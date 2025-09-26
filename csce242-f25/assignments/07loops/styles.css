@@ -1,0 +1,61 @@
+/*P. Elena Maddox, CSCE 242*/
+body{
+    background:skyblue;
+}
+#content{
+    margin: auto; /* Centers the body horizontally */
+    width: 80%; /* Sets a width for the content area */
+    text-align: center; /* Centers inline content within the body */
+}
+
+#cloud-container{
+    padding:50px;
+}
+/* cloud code from https://stackoverflow.com/questions/59336331/how-to-create-a-cloud-by-combining-shapes-into-one-using-css*/
+.cloud {
+    display:inline-block;
+    margin-left:auto;
+    width:200px;
+    height:150px;
+    border-radius: 0 0 50px 50px;
+    background:
+    /*                radius                            position  / 2xradius*/
+    radial-gradient(35px 30px,white 98%,transparent 100%) 20% 30%  /70px    60px,
+    radial-gradient(50px 45px,white 98%,transparent 100%) 50% 50%  /100px   90px,
+    radial-gradient(50px     ,white 98%,transparent 100%) 100% 100%/100px   100px,
+    radial-gradient(40px     ,white 98%,transparent 100%) 0 100%   /80px    80px,
+    /* base of the cloud */
+    linear-gradient(white,white) bottom/100% 40px;;
+    background-repeat:no-repeat;
+    opacity:0.5;
+}
+
+
+.tree {
+    display: inline-block;
+    position:relative;
+    width: 200px;
+    height: 150px;
+
+}
+
+.tree::before {
+    display:inline-block;
+    content: ''; 
+    position: absolute;
+    top:50px;
+    right:75px;
+    width: 55px;
+    height: 100px;
+    background-color: #8B4513; /* Brown color for the trunk */
+}
+.tree::after {
+    display:inline-block;
+    content: ''; 
+    position: absolute;
+    width: 100px; /* Equal width and height for a perfect circle */
+    height: 100px;
+    right:50px;
+    background-color: #4CAF50; /* Green color for the leaves */
+    border-radius: 50%; /* Makes the square div into a circle */
+}

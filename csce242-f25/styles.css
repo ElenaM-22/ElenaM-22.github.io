@@ -123,6 +123,9 @@ img{
         flex:1;
     }
 
+    #main-nav li{
+        max-width:30%;
+    }
     #main-nav li, #project-nav li, #p{
         padding:auto;
     }
