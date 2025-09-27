@@ -1,0 +1,58 @@
+/*P. Elena Maddox, CSCE 242*/
+
+/*start of code copied from 04_js styles.css from in-class example*/
+
+/* Structure */
+:root {
+    --main-background-color:#D9D2A3;
+    --primary-color:#88DBBB;
+    --columns-color:#DBD987;
+    --circle-color: black;
+}
+
+body {
+    text-align:center;
+    background:var(--main-background-color);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#content {
+    background:white;
+    width:90%;
+    margin:auto;
+    border-radius:5px;
+    box-shadow: 10px 10px #DBC688;
+}
+
+header, footer {
+    background:var(--primary-color);
+    color:white;
+    position:relative;
+    padding:20px 0 10px;
+}
+
+header {
+    padding-bottom:3px;
+}
+
+main {
+    padding:5px;
+}
+
+
+/* Typography */
+
+p{
+    color:white;
+}
+header h1 {
+    text-align: center;
+}
+
+header h3 {
+    text-align: center;
+}
+
+footer p {
+    text-align:center;
+}
