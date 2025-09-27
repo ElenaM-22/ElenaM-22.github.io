@@ -38,6 +38,13 @@ function startTime() {
     }
     document.getElementById("btn-draw").style.color = "black";
   }
+  else{
+    const moon = document.getElementById("moon");
+    moon.style.backgroundColor = "yellow";
+    moon.style.boxShadow ="none";
+    moon.style.right= "40px";
+    moon.style.top="30px";
+  }
 }
 
 function checkTime(i) {
