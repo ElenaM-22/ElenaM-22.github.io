@@ -44,10 +44,12 @@ class Painting{
         //picture
         const modalPic = this.picture(this.image);
         modalPicDiv.append(modalPic);
+       
         //modal popup
         const modal01 = document.createElement("div");
         modal01.classList.add("w3-modal");
 
+        //button to close modal
         const span = document.createElement("span");
         span.classList.add("w3-button","w3-hover-red","w3-xlarge");
         span.innerHTML = "&times";
@@ -108,6 +110,7 @@ const paintingListDiv = document.getElementById("painting-list");
 paintings.forEach((painting)=>{
     paintingListDiv.append(painting.item);
 });
+
 
 
 
