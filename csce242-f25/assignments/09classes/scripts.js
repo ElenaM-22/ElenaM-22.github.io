@@ -2,7 +2,7 @@
 
 //Your Project will have a list of paintings, and corresponding information about them. All stored in an array of classes.
 //For each image you will store: name, artist, image, and wether it's framed or not (Some framed and some not)
-
+//painting class 
 class Painting{
     constructor(name, artist, image, framed){
         this.name = name;
@@ -10,12 +10,11 @@ class Painting{
         this.image = image;
         this.framed = framed;
     }
-
+    //get function to set up each painting class item
     get item() {
         const section = document.createElement("section");
         section.classList.add("painting");
-
-        //modal
+        
         /*modal was created by taking the following html code from w3 schools and coding it in js:
         
         <img src="img_snowtops.jpg" onclick="document.getElementById('modal01').style.display='block'" class="w3-hover-opacity">
@@ -31,6 +30,7 @@ class Painting{
             </div>
             </div>
         */
+        
         const modal = document.createElement("div");
         modal.classList.add("w3-container");
 
@@ -41,10 +41,10 @@ class Painting{
         const h3 = document.createElement("h3");
         h3.innerHTML = `${this.name}`;
         modalPicDiv.append(h3);
-        
+        //picture
         const modalPic = this.picture(this.image);
         modalPicDiv.append(modalPic);
-
+        //modal popup
         const modal01 = document.createElement("div");
         modal01.classList.add("w3-modal");
 
@@ -59,6 +59,7 @@ class Painting{
         modalPicDiv.onclick = () => {
             modal01.style.display='block';
         }
+        
         const modalContent = document.createElement("div");
         modalContent.classList.add("w3-modal-content", "w3-animate-zoom");
         modal01.append(modalContent);
@@ -84,7 +85,7 @@ class Painting{
 
         return section;
     }
-
+    //access picture from images folder
     picture(filename) {
         const img = document.createElement("img");
         img.src = `images/${filename}`;
@@ -93,7 +94,7 @@ class Painting{
     }
 
 }
-
+//make paintings class items
 const paintings=[];
 paintings.push(new Painting("Mona Lisa", "Leonardo da Vinci", "mona-lisa.jpg", "no"));
 paintings.push(new Painting("The Scream", "Edward Munch", "scream.jpg", "yes"));
@@ -101,11 +102,12 @@ paintings.push(new Painting("American Gothic", "Grant Wood", "gothic.jpg", "no")
 paintings.push(new Painting("Portrait of Dora Maar", "Pablo Picasso", "dora.jpg", "yes"));
 paintings.push(new Painting("Portrait of Dr. Gachet", "Vincent van Goph", "gachet.jpg", "no"));
 
-//on page load
+//show paintings on page load
 const paintingListDiv = document.getElementById("painting-list");
 
 paintings.forEach((painting)=>{
     paintingListDiv.append(painting.item);
 });
+
 
 
