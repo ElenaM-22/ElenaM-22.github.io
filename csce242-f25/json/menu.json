@@ -1,6 +1,7 @@
 [
   {
     "_id": 1,
+    "section": "starter";
     "name": "Caldo Verde",
     "description": "Traditional kale soup with potatoes, chouriço, and olive oil",
     "price": "8",
@@ -9,6 +10,7 @@
   },
   {
     "_id": 2,
+        "section": "starter";
     "name": "Amêijoas à Bulhão Pato",
     "description": "Clams with garlic, olive oil, lemon, and cilantro",
     "price": "14",
@@ -17,6 +19,7 @@
   },
   {
     "_id": 3,
+        "section": "starter";
     "name": "Pastéis de Bacalhau",
     "description": "Fried cod fritters (4 pieces)",
     "price": "10",
@@ -25,6 +28,7 @@
   },
   {
     "_id": 4,
+        "section": "starter";
     "name": "Chouriço Assado",
     "description": "Smoked sausage grilled at the table",
     "price": "12",
@@ -33,6 +37,7 @@
   },
   {
     "_id": 5,
+        "section": "starter";
     "name": "Salada de Polvo",
     "description": ">Octopus salad with peppers, onions, and olive oil vinaigrette",
     "price": "15",
@@ -41,6 +46,7 @@
   },
   {
     "_id": 6,
+        "section": "starter";
     "name": "Queijo e Presunto",
     "description": "Serra cheese & cured ham platter",
     "price": "16",
@@ -49,6 +55,7 @@
   },
   {
     "_id": 7,
+      "section": "entree";
     "name": "Bacalhau à Brás",
     "description": "Shredded cod with potatoes, onions, and eggs",
     "price": "22",
@@ -57,6 +64,7 @@
   },
   {
     "_id": 8,
+          "section": "entree";
     "name": "Arroz de Marisco",
     "description": "Seafood rice with shrimp, clams, mussels & lobster",
     "price": "32",
@@ -65,6 +73,7 @@
   },
   {
     "_id": 9,
+          "section": "entree";
     "name": "Frango Piri-Piri",
     "description": "Grilled spicy chicken",
     "price": "20",
@@ -73,6 +82,7 @@
   },
   {
     "_id": 10,
+          "section": "entree";
     "name": "Carne de Porco à Alentejana",
     "description": "Pork with clams & potatoes",
     "price": "26",
@@ -81,6 +91,7 @@
   },
   {
     "_id": 11,
+          "section": "entree";
     "name": "Polvo à Lagareiro",
     "description": "Roasted octopus with garlic & potatoes",
     "price": "34",
@@ -89,6 +100,7 @@
   },
   {
     "_id": 12,
+          "section": "entree";
     "name": "Cozido à Portuguesa",
     "description": "Traditional boiled dinner with meats, sausages & vegetables",
     "price": "28",
@@ -97,6 +109,7 @@
   },
   {
     "_id": 13,
+          "section": "side";
     "name": "Arroz de Tomate",
     "description": "Tomato rice",
     "price": "6",
@@ -105,6 +118,7 @@
   },
   {
     "_id": 14,
+    "section": "side";
     "name": "Batatas a Murro",
     "description": "Roasted “punched” potatoes",
     "price": "7",
@@ -113,6 +127,7 @@
   },
   {
     "_id": 15,
+    "section": "side";
     "name": "Esparregado",
     "description": "Creamed spinach with garlic & olive oil",
     "price": "7",
@@ -121,6 +136,7 @@
   },
   {
     "_id": 16,
+    "section": "side";
     "name": "Feijão Verde Salteado",
     "description": "Sautéed green beans",
     "price": "6",
@@ -129,6 +145,7 @@
   },
   {
     "_id": 17,
+    "section": "side";
     "name": "Migas à Alentejana",
     "description": "Rustic bread stuffing",
     "price": "8",
@@ -137,6 +154,7 @@
   },
   {
     "_id": 18,
+    "section": "side";
     "name": "Salada Portuguesa",
     "description": "Tomato, cucumber, onion & olive salad",
     "price": "7",
