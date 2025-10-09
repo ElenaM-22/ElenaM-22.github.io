@@ -1,0 +1,146 @@
+[
+  {
+    "_id": 1,
+    "name": "Caldo Verde",
+    "description": "Traditional kale soup with potatoes, chouriço, and olive oil",
+    "price": "8",
+    "allergens": "soy",
+    "img_name": "json/images/caldo-verde.jpg"
+  },
+  {
+    "_id": 2,
+    "name": "Amêijoas à Bulhão Pato",
+    "description": "Clams with garlic, olive oil, lemon, and cilantro",
+    "price": "14",
+    "allergens": "Shellfish",
+    "img_name": "json/images/pato.jpg"
+  },
+  {
+    "_id": 3,
+    "name": "Pastéis de Bacalhau",
+    "description": "Fried cod fritters (4 pieces)",
+    "price": "10",
+    "allergens": "Fish, Eggs, Gluten, Dairy",
+    "img_name": "json/images/codcake.jpg"
+  },
+  {
+    "_id": 4,
+    "name": "Chouriço Assado",
+    "description": "Smoked sausage grilled at the table",
+    "price": "12",
+    "allergens": "soy",
+    "img_name": "json/images/chourico.jpg"
+  },
+  {
+    "_id": 5,
+    "name": "Salada de Polvo",
+    "description": ">Octopus salad with peppers, onions, and olive oil vinaigrette",
+    "price": "15",
+    "allergens": "shellfish",
+    "img_name": "json/images/salada.jpg"
+  },
+  {
+    "_id": 6,
+    "name": "Queijo e Presunto",
+    "description": "Serra cheese & cured ham platter",
+    "price": "16",
+    "allergens": "dairy",
+    "img_name": "json/images/serra.png"
+  },
+  {
+    "_id": 7,
+    "name": "Bacalhau à Brás",
+    "description": "Shredded cod with potatoes, onions, and eggs",
+    "price": "22",
+    "allergens": "Fish, Eggs, Gluten",
+    "img_name": "json/images/bras.jpg"
+  },
+  {
+    "_id": 8,
+    "name": "Arroz de Marisco",
+    "description": "Seafood rice with shrimp, clams, mussels & lobster",
+    "price": "32",
+    "allergens": "Fish, shellfish",
+    "img_name": "json/images/arroz.jpg"
+  },
+  {
+    "_id": 9,
+    "name": "Frango Piri-Piri",
+    "description": "Grilled spicy chicken",
+    "price": "20",
+    "allergens": "N/A",
+    "img_name": "json/images/piri.png"
+  },
+  {
+    "_id": 10,
+    "name": "Carne de Porco à Alentejana",
+    "description": "Pork with clams & potatoes",
+    "price": "26",
+    "allergens": "shellfish",
+    "img_name": "json/images/porco.jpg"
+  },
+  {
+    "_id": 11,
+    "name": "Polvo à Lagareiro",
+    "description": "Roasted octopus with garlic & potatoes",
+    "price": "34",
+    "allergens": "Shellfish",
+    "img_name": "json/images/polvo.jpg"
+  },
+  {
+    "_id": 12,
+    "name": "Cozido à Portuguesa",
+    "description": "Traditional boiled dinner with meats, sausages & vegetables",
+    "price": "28",
+    "allergens": "Soy, gluten",
+    "img_name": "json/images/cozido.png"
+  },
+  {
+    "_id": 13,
+    "name": "Arroz de Tomate",
+    "description": "Tomato rice",
+    "price": "6",
+    "allergens": "N/A",
+    "img_name": "json/images/tomate.jpg"
+  },
+  {
+    "_id": 14,
+    "name": "Batatas a Murro",
+    "description": "Roasted “punched” potatoes",
+    "price": "7",
+    "allergens": "N/A",
+    "img_name": "json/images/batatas.jpg"
+  },
+  {
+    "_id": 15,
+    "name": "Esparregado",
+    "description": "Creamed spinach with garlic & olive oil",
+    "price": "7",
+    "allergens": "Dairy, gluten",
+    "img_name": "json/images/esp.png"
+  },
+  {
+    "_id": 16,
+    "name": "Feijão Verde Salteado",
+    "description": "Sautéed green beans",
+    "price": "6",
+    "allergens": "Tree nuts",
+    "img_name": "json/images/verde.jpg"
+  },
+  {
+    "_id": 17,
+    "name": "Migas à Alentejana",
+    "description": "Rustic bread stuffing",
+    "price": "8",
+    "allergens": "Glutem, soy",
+    "img_name": "json/images/migas.jpg"
+  },
+  {
+    "_id": 18,
+    "name": "Salada Portuguesa",
+    "description": "Tomato, cucumber, onion & olive salad",
+    "price": "7",
+    "allergens": "N/A",
+    "img_name": "json/images/salada2.png"
+  }  
+]
