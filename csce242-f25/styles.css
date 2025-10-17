@@ -22,6 +22,7 @@ body{
     background: #d19784;
     padding:5px;
     border-radius:5px;
+    min-height:200px;
     max-height:240px;
     max-width:50%;
     margin-left:auto;
