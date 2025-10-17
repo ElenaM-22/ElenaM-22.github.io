@@ -52,6 +52,7 @@ const showFoods = async() => {
         const img = document.createElement("img");
         imageSection.append(img);
         img.src = `https://elenam-22.github.io/csce242-f25/${food.img_name}`;
+        img.classList.add("menu-images");
         console.log(food);
 
         if(food.section === "starter"){  
