@@ -1,0 +1,84 @@
+<!--P. Elena Maddox, CSCE 242-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Casa de Franco</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body class="not-menu">
+
+    <div id="content">
+        <header id="main-header">
+            <nav id="main-nav">
+                <a href="index.html"><img id="logo" src="images/logo.png"></a>
+                <ul class="columns">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="fado.html">Fado</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content" class="columns">
+        <main id="main-content" class="columns">
+            <ol>
+                <li id="about-columns">
+                    <div class="flex-item">
+                        <h3>Contact Information</h3>
+                        <div id="time-table" class="contact">
+                            <ol>
+                                <li>Telephone: +1(000)000-0000</li>
+                                <li>Catering Inquiries: some_email@casadefranco.com</li>
+                                <li>
+                                    <section class="one">
+                                        <h3>Let us know how we're doing!</h3>
+                                        <form method="POST" id="contact-form">
+
+                                            <input type="hidden" name="access_key" value="2aa8a7c4-78b9-41ca-ae04-93643c34b79b">
+
+                                            <p>
+                                                <label for="name">Name:</label>
+                                                <input type="text" name="name" required>
+                                            </p>
+                                            <p>
+                                                <label for="email">Email:</label>
+                                                <input type="email" name="email" required>
+                                            </p>
+                                            <p>
+                                                <label for="message">Message: </label>
+                                                <textarea name="message" required></textarea>
+                                            </p>
+                                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                                            <p><button type="submit">Submit Form</button></p>
+
+                                            <div id="contact-result">
+                                            </div>
+                                            
+                                            <p id="message-sent"></p>
+                                        </form>
+                                    </section>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+            <img id="fado1" src="images/gpt-fado.png">
+        </main>
+        
+        <footer id="main-footer">
+
+        </footer>
+
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>
